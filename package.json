@@ -1,0 +1,24 @@
+{
+  "name": "lottery",
+  "version": "1.0.0",
+  "description": "a html5 page with css3 animation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamayan/lottery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mamayan/lottery/issues"
+  },
+  "homepage": "https://github.com/mamayan/lottery#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2"
+  }
+}
