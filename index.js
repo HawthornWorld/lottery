@@ -4,4 +4,4 @@
 (function(){
   "use strict";
 
-})()
+})();
