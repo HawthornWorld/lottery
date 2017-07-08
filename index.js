@@ -14,6 +14,7 @@
           return;
         }
         docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+        console.log(docEl.schemaTypeInfo);
       };
 
   if (!d.addEventListener) return;
