@@ -27,16 +27,20 @@
   var selfContent = document.getElementsByClassName('self-content')[0];
   var btnRule = document.getElementsByClassName('btn-rule')[0];
   var introClose = document.getElementsByClassName('intro-close')[0];
+  var noScroll = document.getElementsByTagName('body')[0];
   btnRule.addEventListener('click', function () {
     mask.style.display = 'block';
     selfContent.style.display = 'block';
+    noScroll.classList.add('overflow');
   });
   mask.addEventListener('click', function () {
     mask.style.display = 'none';
     selfContent.style.display = 'none';
+    noScroll.classList.remove('overflow');
   });
   introClose.addEventListener('click', function () {
     mask.style.display = 'none';
     selfContent.style.display = 'none';
+    noScroll.classList.remove('overflow');
   });
 })();
