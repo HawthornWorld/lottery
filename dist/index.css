@@ -99,16 +99,30 @@ body {
   width: 100%;
   height: 100%;
 }
-.lotto {
+#bar {
   position: absolute;
   top: 4.4rem;
+  width: 100%;
+  height: .56rem;
+}
+#bar.top-bar {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.lotto {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: .3rem;
   width: 1.59rem;
   height: 0.325rem;
 }
 .holiday {
   position: absolute;
-  top: 4.4rem;
+  top: 50%;
+  transform: translateY(-50%);
   right: .3rem;
   width: 1.59rem;
   height: 0.325rem;
@@ -187,4 +201,14 @@ body {
   height: 100%;
   background-color: #000;
   opacity: .35;
+}
+.travel a,
+.business a,
+.family a,
+.couple a {
+  position: absolute;
+  left: 1rem;
+  width: 2rem;
+  height: .5rem;
+  background-color: aquamarine;
 }
