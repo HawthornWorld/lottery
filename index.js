@@ -1,7 +1,7 @@
 /**
  * Created by yanma on 17-7-5.
  */
-
+//设置不同设备根元素的fontSize
 (function(d, w) {
   var docEl = d.documentElement,
       resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
@@ -17,7 +17,7 @@
   w.addEventListener(resizeEvt, recalc, false);
   d.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
-
+//点击按钮出现弹窗和弹窗收回
 (function() {
   var mask = document.getElementsByClassName('mask')[0];
   var selfContent = document.getElementsByClassName('self-content')[0];
@@ -40,21 +40,23 @@
     noScroll.classList.remove('overflow');
   });
 })();
-
-
+//点击按钮切换按钮图片，页面上划到指定位置
 function changePic(){
   var btnImg1=document.getElementsByClassName('lotto')[0];
   var btnImg2=document.getElementsByClassName('holiday')[0];
   btnImg1.addEventListener('click',function () {
     btnImg1.setAttribute('src','images/lotto-focus.png');
+    btnImg2.setAttribute('src','images/holiday.png');
+    document.body.scrollTop = 1500;
   });
   btnImg2.addEventListener('click',function () {
     btnImg2.setAttribute('src','images/holiday-focus.png');
+    btnImg1.setAttribute('src','images/lotto.png');
+    document.body.scrollTop = 2400;
   });
 }
 changePic();
-
-
+//按钮随页面滚动调整位置
 window.onscroll = function () {
   myFunction();
 };
@@ -66,3 +68,4 @@ function myFunction() {
     btnTop.classList.remove('top-bar');
   }
 }
+
