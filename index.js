@@ -69,3 +69,7 @@ function myFunction() {
   }
 }
 
+
+window.addEventListener("orientationchange", function() {
+    alert("the orientation of the device is now " + screen.orientation.angle);
+});
