@@ -7,5 +7,5 @@ var less = require('gulp-less');
 gulp.task('default',function () {
          gulp.src('index.less')
         .pipe(less())
-        .pipe(gulp.dest('dist/'));
+        .pipe(gulp.dest('dist/'))
 });
